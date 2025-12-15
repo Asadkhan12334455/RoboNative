@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Physical AI & Humanoid Robotics Textbook Platform
 
 A next-generation educational platform built with **Antigravity AI**.
@@ -72,3 +73,6 @@ Features a Docusaurus-based interactive textbook, integrated RAG Chatbot (FastAP
 - **Integrated RAG**: Ask questions about the book content via the floating chat widget.
 - **Personalization**: Toggle between "Software" and "Hardware" perspectives.
 - **Urdu Translation**: (Demo) Switch language context to see localized content.
+=======
+# RoboNatice
+>>>>>>> 99f4c1af3d28ff1f715d6c76174e309288f53c88
