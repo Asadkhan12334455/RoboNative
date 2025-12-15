@@ -1,0 +1,19 @@
+physical-ai:
+  label: Physical AI
+  permalink: /physical-ai
+  description: The intersection of Artificial Intelligence and Mechanical Engineering.
+
+robotics:
+  label: Robotics
+  permalink: /robotics
+  description: The study of robot building, operation, and application.
+
+vla:
+  label: VLA Models
+  permalink: /vla
+  description: Vision-Language-Action models for embodied intelligence.
+
+ros2:
+  label: ROS 2
+  permalink: /ros2
+  description: The Robot Operating System 2 - Middleware for robots.

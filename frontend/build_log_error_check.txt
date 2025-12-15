@@ -1,0 +1,12 @@
+
+> frontend@0.0.0 build
+> docusaurus build
+
+[INFO] [en] Creating an optimized production build...
+[WARNING] Tags [physical-ai, robotics, vla, ros2] used in 2024-12-15-future-of-embodied-ai.md are not defined in tags.yml
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Server
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Server: Compiled successfully in 4.46s
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Client: Compiled successfully in 4.56s
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.

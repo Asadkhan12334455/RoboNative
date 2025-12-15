@@ -1,0 +1,128 @@
+.quizContainer {
+    background: rgba(20, 20, 35, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 242, 234, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.quizContainer:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0, 242, 234, 0.4);
+}
+
+.quizHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00f2ea;
+    margin-bottom: 1rem;
+}
+
+.quizHeader h3 {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.question {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.option {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    color: #e0e0e0;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option:hover:not(:disabled) {
+    background: rgba(0, 242, 234, 0.1);
+    border-color: #00f2ea;
+}
+
+.selected {
+    border-color: #00f2ea;
+    background: rgba(0, 242, 234, 0.05);
+    box-shadow: 0 0 10px rgba(0, 242, 234, 0.1);
+}
+
+.correct {
+    border-color: #ccff00;
+    background: rgba(204, 255, 0, 0.1) !important;
+    color: #ccff00;
+}
+
+.wrong {
+    border-color: #ff0050;
+    background: rgba(255, 0, 80, 0.1) !important;
+    color: #ff0050;
+}
+
+.submitBtn {
+    margin-top: 1.5rem;
+    background: linear-gradient(135deg, #00f2ea 0%, #00c2ff 100%);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+}
+
+.submitBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.feedback {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    animation: fadeIn 0.3s ease;
+}
+
+.feedbackSuccess {
+    background: rgba(204, 255, 0, 0.1);
+    border-left: 3px solid #ccff00;
+}
+
+.feedbackError {
+    background: rgba(255, 0, 80, 0.1);
+    border-left: 3px solid #ff0050;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

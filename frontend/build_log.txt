@@ -1,0 +1,57 @@
+
+> frontend@0.0.0 build
+> docusaurus build
+
+[INFO] [en] Creating an optimized production build...
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Server
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Server: Compiled successfully in 5.91s
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Client: Compiled successfully in 6.09s
+
+[ERROR] Error: Unable to build website for locale en.
+    at tryToBuildLocale (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\commands\build\build.js:83:15)
+    at async D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\commands\build\build.js:35:9
+    at async mapAsyncSequential (D:\claude\project1\frontend\node_modules\@docusaurus\utils\lib\jsUtils.js:21:24)
+    at async Command.build (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\commands\build\build.js:34:5)
+    at async Promise.all (index 0)
+    at async runCLI (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\commands\cli.js:56:5)
+    at async file:///D:/claude/project1/frontend/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3 {
+  [cause]: Error: Docusaurus static site generation failed for 1 paths:
+  - "/docs/module-1/intro"
+      at throwSSGError (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\ssg\ssgGlobalResult.js:56:11)
+      at createGlobalSSGResult (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\ssg\ssgGlobalResult.js:66:9)
+      ... 7 lines matching cause stack trace ...
+      at async mapAsyncSequential (D:\claude\project1\frontend\node_modules\@docusaurus\utils\lib\jsUtils.js:21:24) {
+    [cause]: AggregateError
+        at throwSSGError (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\ssg\ssgGlobalResult.js:57:16)
+        at createGlobalSSGResult (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\ssg\ssgGlobalResult.js:66:9)
+        at D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\ssg\ssgExecutor.js:30:68
+        at async executeSSG (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\ssg\ssgExecutor.js:144:20)
+        at async buildLocale (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\commands\build\buildLocale.js:84:31)
+        at async runBuildLocaleTask (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\commands\build\build.js:98:5)
+        at async D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\commands\build\build.js:79:13
+        at async tryToBuildLocale (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\commands\build\build.js:75:9)
+        at async D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\commands\build\build.js:35:9
+        at async mapAsyncSequential (D:\claude\project1\frontend\node_modules\@docusaurus\utils\lib\jsUtils.js:21:24) {
+      [errors]: [
+        Error: Can't render static file for pathname "/docs/module-1/intro"
+            at generateStaticFile (D:\claude\project1\frontend\node_modules\@docusaurus\core\lib\ssg\ssgRenderer.js:131:20)
+            at async D:\claude\project1\frontend\node_modules\p-map\index.js:57:22 {
+          [cause]: Error: Expected component `LangContent` to be defined: you likely forgot to import, pass, or provide it.
+              at _missingMdxReference (server.bundle.js:33415:9)
+              at _createMdxContent (server.bundle.js:33311:21)
+              at MDXContent (server.bundle.js:33412:8)
+              at renderWithHooks (server.bundle.js:21954:18)
+              at renderElement (server.bundle.js:22092:14)
+              at retryNode (server.bundle.js:22810:16)
+              at renderNodeDestructive (server.bundle.js:22604:7)
+              at renderElement (server.bundle.js:22537:11)
+              at retryNode (server.bundle.js:22810:16)
+              at renderNodeDestructive (server.bundle.js:22604:7)
+        }
+      ]
+    }
+  }
+}
+[INFO] Docusaurus version: 3.9.2
+Node version: v24.12.0
