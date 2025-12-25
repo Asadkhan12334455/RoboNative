@@ -65,7 +65,7 @@ Give clear, concise, and easy-to-understand answers."""
                     },
                     timeout=30.0
                 )
-                
+
                 if response.status_code == 200:
                     data = response.json()
                     answer = data['choices'][0]['message']['content']
